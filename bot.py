@@ -153,7 +153,7 @@ async def admin_reply_handler(client, message: Message):
 
     if state == "set_instruction":
         if message.photo:
-            data["instruction_photo"] = message.photo[-1].file_id
+            data["instruction_photo"] = message.photo.file_id
             data["instruction"] = message.caption or ""
         else:
             data["instruction_photo"] = None
