@@ -11,9 +11,9 @@ API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-app = Client("forcejoin_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client("cam", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-admin_id = 2115663220  # Change to your Telegram ID
+admin_id = 1889545520  # Change to your Telegram ID
 data_file = "data.json"
 pending_state = {}  # Track admin replies
 users = set()
